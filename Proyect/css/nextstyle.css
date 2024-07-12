@@ -1,0 +1,158 @@
+.second-main {
+    padding: 40px;
+}
+
+.lista-tienda {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.lista-tienda a {
+    color: black;
+    background-color: #dad8ce;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid black;
+    padding: 12px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+}
+
+.lista-tienda a:hover:nth-child(2n) {
+    color: red;
+    border: 2px solid darkred;
+}
+
+.lista-tienda a:hover:nth-child(2n+1) {
+    color: blue;
+    border: 2px solid darkblue;
+}
+
+.h2-tienda {
+    text-transform: uppercase;
+    font-style: italic;
+    margin: 60px 0px;
+    padding-left: 20px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 3px #c29800be;
+    background: linear-gradient(to right, #c29800be, #000000ff, #dad8ce);
+    line-height: 40px;
+}
+
+.article-tienda {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 40px 60px;
+}
+
+.article-tienda a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.article-tienda a:hover {
+    color: blue;
+}
+
+.info-articulo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 300px;
+}
+
+.info-articulo p {
+    margin-top: 0;
+}
+
+.equipacion p:first-child, .materiales p:first-child, .pilotes p:first-child {
+    margin-top: 20px;
+}
+
+.info-articulo > p:nth-child(2) {
+    color: red;
+}
+
+img {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+/* Boton de vuelta al inicio (Importado) */
+
+#pagina-principal {
+        display: inline-block;
+        border-radius: 4px;
+        background: radial-gradient(at right, #c49900, #fee1a8);
+        border: none;
+        color: black;
+        text-align: center;
+        font-size: 18px;
+        padding: 12px;
+        width: 200px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 20px 0px;
+}
+
+#pagina-principal span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+}
+
+#pagina-principal span:after {
+        content: '\00ab';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        left: -20px;
+        transition: 0.5s;
+}
+
+#pagina-principal:hover span {
+        padding-left: 25px;
+}
+
+#pagina-principal:hover span:after {
+        opacity: 1;
+        left: 0;
+}
+
+/* Inicios de sesion y registro */
+
+.h3-sesion {
+    font-size: 26px;
+}
+
+.sesion {
+    font-size: 38px;
+}
+
+label {
+    font-size: 20px;
+}
+
+input {
+    margin: 4px 10px;
+    font-size: 19px;
+}
+
+.boton-formulario {
+    padding: 8px;
+    margin: 16px 0px;
+}
+
+.registrate {
+    font-size: 19px;
+    font-weight: bolder;
+}
+

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>PVinalopó Login</title>
+    <meta name="description" content="Ejemplo de HTML">
+    <meta name="author" content="Miguel Hérnandez Monllor">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nextstyle.css">
+
+</head>
+
+<body>
+    <header class="main-menu">
+        <nav>
+            <section class="nav-izquierda">
+                <ul class="menu-nav-izq">
+                    <a href="index.html">
+                        <li><ion-icon name="home-outline"></ion-icon>
+                            Inicio</li>
+                    </a>
+                    <a href="#">
+                        <li><ion-icon name="newspaper-outline"></ion-icon>
+                            Noticias</li>
+                    </a>
+                    <a href="#">
+                        <li><ion-icon name="school-outline"></ion-icon>
+                            Escuelas</li>
+                    </a>
+                    <a href="tienda.html">
+                        <li><ion-icon name="pricetags-outline"></ion-icon>
+                            Tienda</li>
+                    </a>
+                    <a href="informacion.html">
+                        <li><ion-icon name="newspaper-outline"></ion-icon>
+                            Información</li>
+                    </a>
+                    <a href="contacto.html">
+                        <li><ion-icon name="call-outline"></ion-icon>
+                            Contacto</li>
+                    </a>
+                    <!-- <a href="concurso.html">
+                    <li><ion-icon name="medal-outline"></ion-icon>
+                        Concurso</li>
+                </a> -->
+                </ul>
+            </section>
+            <section class="nav-derecha">
+                <ul class="menu-nav-der">
+                    <ion-icon name="search-outline"></ion-icon><input type="search" name="busqueda" id="lupa"
+                        placeholder="Buscar . . .">
+                    <a href="login.html"><ion-icon name="person-circle-outline"></ion-icon></a>
+                    <a href="#"><ion-icon name="cart-outline"></ion-icon></a>
+                </ul>
+            </section>
+        </nav>
+        <header class="main-title">
+            <img class="logo" src="img/PilotaVinalopo.png" alt="Logo Pilota Valenciana Vinalopó">
+            <section>
+                <h1>Login Pilota Valenciana Vinalopó</h1>
+                <h2>Entidad de Promoción Pilota Valenciana en Alicante.</h2>
+            </section>
+        </header>
+    </header>
+    <main class="second-main">
+
+
+        <h2 class="sesion">Iniciar Sesión en Pilota Vinalopó</h2>
+
+        <form action="/action_page.php">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="pwd" name="pwd" minlength="8"><br><br>
+            <input class="boton-formulario" type="submit" value="Iniciar sesión">
+        </form>
+
+        <h3 class="h3-sesion">¿No estás registrado?</h3>
+        <a href="registro.html"><p class="registrate">Registrate aquí</p></a>
+
+
+        <a href="index.html"><button id="pagina-principal"><span>Volver al Inicio</span></button></a>
+
+    </main>
+    <footer>
+
+        <div class="footer-main">
+            <div class="footer-logo">
+                <img src="img/PilotaVinalopoBlanco.png" alt="Logo Pilota Vinalopó" width="175px">
+            </div>
+            <div class="footer-info">
+                <h4>INFORMACIÓN</h4>
+                <p>Calle Trinquete, 1, 03610<br>Petrer, Alacant</p>
+                <p>Teléfono: +34 965 123 123</p>
+                <p>Email: info@pilotavinalopo.com</p>
+
+                <h4>REDES SOCIALES</h4>
+                <ul id="redes-sociales">
+                    <a href="https://www.instagram.com/pilotavalencianavinalopo/" target="_blank"><li class="instagram"><ion-icon name="logo-instagram"></ion-icon> Instagram</li></a>
+                    <a href="https://www.facebook.com/vpilota/" target="_blank"><li class="facebook"><ion-icon name="logo-facebook"></ion-icon> Facebook</li></a>
+                </ul>
+
+
+            </div>
+            <div class="footer-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1204.2030109508091!2d-0.7765582774168892!3d38.48034824936648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd63c512651a5b4b%3A0xe29e343658838bbf!2sTrinquet%20de%20Petrer!5e0!3m2!1ses!2ses!4v1701548286436!5m2!1ses!2ses"
+                    width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="footer-social">
+                <h4>AYUDA</h4>
+                <ul>
+                    <li><a href="informacion.html">Términos y condiciones</a></li>
+                    <li><a href="https://fedpival.es/val/inici" target="_blank">Página de la Federación de Pilota Valenciana</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <footer class="footer-bot">
+            <p>Copyright &copy; Pilota Valenciana Vinalopó 2023</p>
+        </footer>
+
+    </footer>
+
+</body>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>
